@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+
+    <style>
+        .table-body{
+            border: strong 2px black;
+            background-color: blue;
+        }
+    
+        #container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          flex: 1;
+          background-color: #faf4;
+        }
+    
+        .list-item {
+          height: 60px;
+          border: solid 2px #333;
+          text-align: center;
+          margin: 4px;
+          padding: 4px;
+          
+        }
+      </style>
+    </head>
+    
+    <body>
+      <table class="table">
+          <thead >
+              <th>Name</th>
+              <th>Price</th>
+              <th>Vegan</th>
+          </thead>
+          <tbody id="table-body"></tbody>
+      </table>
+      <div id="container"></div>
+    </body>
+    
+    </html>

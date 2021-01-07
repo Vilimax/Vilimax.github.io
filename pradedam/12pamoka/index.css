@@ -1,0 +1,19 @@
+div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  a {
+    width: 48px;
+    height: 48px;
+    border: solid 2px black;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+    
+  }

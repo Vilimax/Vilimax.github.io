@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Vardų generatorius</title>
+  <style>
+    .custom-button {
+      width: 100px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: solid 2px rgb(27, 190, 136);
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .name-container {
+      border: solid 2px black;
+      width: 100px;
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Kas siurbs kambarius prieš kalėdas?</h1>
+  <button id="button-reset" class="custom-button">Atnaujinti</button>
+  <button id="button" class="custom-button">Generuoti</button>
+  <div id="result" class="name-container"></div>
+</body>
+<script>
+  const list = [
+    "Rasa",
+    "Mantvydas",
+    "Eglė",
+    "Vilius",
+  ];
+  const listNew = [
+    "Rasa",
+    "Mantvydas",
+    "Eglė",
+    "Vilius",
+  ];
+
+  document.getElementById("button-reset").onclick = function (event) {
+    listNew.splice(0);
+    list.forEach(item => listNew.push(item));
+  };
+
+  document.getElementById("button").onclick = function (event) {
+    if(listNew.length) {
+    const index = Math.floor(
+      Math.random() * listNew.length
+    );
+    document.getElementById("result").innerHTML = listNew[index];
+    listNew.splice(index, 1);
+    } else {
+      document.getElementById("result").innerHTML = 'Nebere zmoniu';
+    }
+  };
+</script>
+
+</html>
