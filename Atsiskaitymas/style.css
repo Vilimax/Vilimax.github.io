@@ -17,20 +17,19 @@ body, html {
 
 #menu {
     display: flex;
-	width: 80%;
+	width: 100%;
 	height: 40px;
-	margin: 0 auto;
-	padding: 0 auto;
-    background-color: black;
+	background-color: black;
     text-align: center;
     justify-content: center;
+   
 }
-
-#menu ul {
-	margin: 0;
-    padding: 0px 0px 0px 10px;
-    list-style: none;
-	
+#menu ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0;
 }
 
 #menu li {
@@ -58,13 +57,6 @@ body, html {
     text-decoration: underline;
 }
 
-#menu .main a {
-	padding-left: 0;
-}
-#wrapper {
-	margin: 0 auto;
-    padding: 0;
-}
 
 #lg {
     display: flex;
@@ -77,17 +69,6 @@ body, html {
     
 }
 
-#logo{
-    background: url(fotos/smegenai.jpg);
-    background-position: center;
-    background-attachment: cover;
-    background-repeat: no-repeat;
-    
-    
-  
-   
-	
-}
 
 #lg h1 {
     margin: 0 auto;
@@ -98,7 +79,18 @@ body, html {
     color: green;
 	
 }
-
+#coco{
+    display: block;
+    
+    padding-top: 200px;
+    
+}
+#coco{
+    display: flex;
+    float: left;
+    padding-top: 100px;
+    width: 70%;
+}
 
 
 
