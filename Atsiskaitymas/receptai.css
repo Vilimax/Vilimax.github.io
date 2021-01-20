@@ -99,6 +99,54 @@ body, html {
 	
 }
 
+#sidebar {
+	float: left;
+    width: 230px;
+    padding: 60px;
+}
 
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 
+#sidebar li {
+	margin: 0;
+    padding: 0;
+    line-height: 35px;
+	border-bottom: 1px dashed #0e0d0d;
+}
 
+#sidebar h2 {
+	height: 38px;
+	padding: 12px 0 0 0px;
+	letter-spacing: -.5px;
+	color: #181818;
+}
+
+#sidebar a {
+	border: none;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+}
+#content {
+    display: flex;
+    position: relative;
+	float: center;
+    padding: 60px;
+    
+    
+}
+
+.post .title {
+    height: 38px;
+	letter-spacing: -.5px;
+	color: #E3295B;
+}
+.entry{
+    display: block;
+    width: 80%;
+}
