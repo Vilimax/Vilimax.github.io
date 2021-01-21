@@ -15,28 +15,17 @@ body, html {
   
 }
 
-#menu {
-    display: flex;
-	width: 100%;
-	height: 40px;
-	background-color: black;
-    text-align: center;
-    justify-content: center;
-   
-}
 #menu ul{
     display: flex;
     text-align: center;
     justify-content: center;
-    padding: 0px 0px 0px 0px;
+    padding: 0;
     margin: 0;
+    width: 100%;
+	height: 40px;
+	background-color: black;
 }
 
-#menu li {
-   display: flex;
-    float: left;
-    
-}
 
 #menu a {
 	display: flex;
@@ -59,38 +48,51 @@ body, html {
 
 
 #lg {
-    display: flex;
-    position: relative;
-	float: none;
-    height: 150px;
+    text-align: center;
+    height: 100px;
     margin: 0px auto;
     padding: 0px;
-   
-    
-}
-
-
-#lg h1 {
-    margin: 0 auto;
-	padding: 0;
-	padding-top: 40px;
 	letter-spacing: 1px;
-    font-size: 4em;
+    font-size: 2rem;
     color: green;
-	
 }
-#coco{
-    display: block;
-    
-    padding-top: 200px;
-    
-}
-#coco{
+
+#pav #coco{
     display: flex;
     float: left;
-    padding-top: 100px;
-    width: 70%;
+    padding-top: 10px;
+    max-width: 300px;
+    
 }
+@keyframes foo { 
+	0% { content: url(fotos/coconut3.jpg); } 
+	33% { content: url(fotos/coconut2.jpg); } 
+    66% { content: url(fotos/coconut1.jpg); } 
+    100% { content: url(fotos/coconut4.jpg); }
+	
+} 
+ 
+.bar { 
+    display: flex;
+    float: right;
+	animation-name: foo; 
+	animation-duration: 3s; 
+	animation-iteration-count: infinite; 
+	max-height: 500px; 
+    max-width: 300px; 
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 25%;
+   
+    
+} 
+#intro{
+    padding-top: 20px;
+    text-align: center;
+    color: teal;
+    font-size: 4rem;
+    font-style: italic;
 
+}
 
 
