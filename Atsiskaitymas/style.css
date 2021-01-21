@@ -52,8 +52,7 @@ body, html {
     text-align: center;
     height: 100px;
     margin: 0px auto;
-    
-	letter-spacing: 0.5px;
+    letter-spacing: 0.5px;
     font-size: 2rem;
     color: green;
     animation-name: koko;
