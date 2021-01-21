@@ -53,8 +53,9 @@ body, html {
     margin: 0px auto;
     padding: 0px;
 	letter-spacing: 1px;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: green;
+    
 }
 
 #sidebar {
@@ -73,7 +74,8 @@ body, html {
 	margin: 0;
     padding: 0;
     line-height: 35px;
-	border-bottom: 1px dashed #0e0d0d;
+    border-bottom: 1px dashed #0e0d0d;
+    
 }
 
 #sidebar h2 {
@@ -84,7 +86,10 @@ body, html {
 }
 
 #sidebar a {
-	border: none;
+    text-decoration: none;
+    color: #d81818;
+    font-size: 1.2rem;
+
 }
 
 #sidebar a:hover {
@@ -107,4 +112,20 @@ body, html {
 .entry{
     display: block;
     width: 80%;
+}
+#button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 10%;
+    
+    
+}
+#button:hover{
+    border-radius: 100%;
 }

@@ -48,14 +48,28 @@ body, html {
 
 
 #lg {
+    position: relative;
     text-align: center;
     height: 100px;
     margin: 0px auto;
-    padding: 0px;
-	letter-spacing: 1px;
+    
+	letter-spacing: 0.5px;
     font-size: 2rem;
     color: green;
+    animation-name: koko;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    width: 90%;
 }
+
+@keyframes koko {
+    0%   {color:red;left: 0px; top: 0px;}
+    25%  {color:rgb(44, 44, 38); left:20px; top: 0px;}
+    50%  {color:blue;left: 20px; top: 20px;}
+    75%  {color:green;left: 0px; top: 20px;}
+    100% {color:red;left: 0px; top: 0px;}
+  }
+
 
 #pav #coco{
     display: flex;
