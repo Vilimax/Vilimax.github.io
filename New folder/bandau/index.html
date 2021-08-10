@@ -1,112 +1,145 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title></title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <style>
-    html,
-    body {
-      padding: 0;
-      margin: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
-
-    @keyframes turtle-animation {
-      0% {
-        transform: rotate(-45deg) scale(0.2) translate(0, 0);
-      }
-
-
-      10% {
-        transform: translate(20%, -40%) rotate(0deg) scale(0.4);
-      }
-
-      20% {
-        transform: translate(10%, -60%) rotate(45deg) scale(0.5);
-      }
-
-      30% {
-        transform: translate(100%, -50%) rotate(180deg) scale(0.3);
-      }
-
-      40% {
-        transform: translate(50%, -100%) rotate(-10deg) scale(0.2);
-      }
-
-      50% {
-        transform: translate(-30%, 80%) rotate(-160deg) scale(0.6);
-      }
-
-      60% {
-        transform: translate(-80%, 100%) rotate(0deg) scale(1);
-      }
-
-      70% {
-        transform: translate(20%, 30%) rotate(45deg) scale(0.8);
-      }
-
-      80% {
-        transform: translate(0%, 0%) rotate(-45deg) scale(1);
-      }
-
-      90% {
-        transform: translate(0%, 0%) rotate(-45deg) scale(1);
-      }
-    }
-
-    .container {
-      width: 234px;
-      height: 234px;
-      overflow: hidden;
-      position: relative;
-      transform: rotate(-45deg) scale(0.2);
-      animation: turtle-animation 10s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      transform-origin: 50% 50%;
-    }
-
-    .container>img {
-      transform: translate(-11px, -11px);
-      width: 256px;
-      height: 256px;
-      object-fit: contain;
-    }
-
-    .turtle {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 2;
-    }
-
-    .trippy {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 1;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Cheat Sheet</title>
 </head>
-
 <body>
-  <div class="container">
-    <img class="turtle" src="img/turtle.png" alt="turtle" />
-    <img class="trippy" src="img/trippy.gif" alt="trippy" />
-  </div>
-</body>
+    <!--Headings-->
+    <h1>Heading One</h1>
+    <h2>Heading Two</h2>
+    <h3>Heading Three</h3>
+    <h4>Heading Four</h4>
+    <h5>Heading Five</h5>
+    <h6>Heading Six</h6>
 
-</html> 
+    <!--Paragaph-->
+    <p>
+      Lorem <strong>ipsum dolor sit amet</strong> <em>ipsum dolor sit amet</em> ipsum dolor sit amet
+    </p>
+    <p>
+      Lorem ipsum dolor, <a href="">sit amet consectetur adipisicing elit</a> sit amet consectetur adipisicing elit. Dolores quaerat, molestiae explicabo quibusdam repellat fuga praesentium! Debitis harum ab, fugit adipisci blanditiis placeat veniam quidem eius veritatis tempora quisquam eveniet!
+    </p>
+
+    <!--Lists-->
+    <ul>
+      <li>List iteam 1</li>
+      <li>List iteam 1</li>
+      <li>List iteam 1</li>
+      <li>List iteam 1</li>
+    </ul>
+    <ol>
+      <li>List iteam 1</li>
+      <li>List iteam 1</li>
+      <li>List iteam 1</li>
+      <li>List iteam 1</li>
+    </ol>
+
+    <!--Tables-->
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Vilius</td>
+          <td>a@a.com</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Rasa</td>
+          <td>a@a.com</td>
+          <td>35</td>
+        </tr>
+        <tr>
+          <td>Egle</td>
+          <td>a@a.com</td>
+          <td>40</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <!--Forms-->
+    <form action="process.php" method="POST">
+      <div>
+        <label>First Name</label>
+        <input type="text" name="firstname">
+      </div>
+      <br>
+      <Div>
+        <label>Last Name</label>
+        <input type="text" name="lastname">
+      </Div>
+      <br>
+      <div>
+        <label>Email</label>
+        <input type="email" name="email">
+      </div>
+      <br>
+      <div>
+        <label>Message</label>
+        <textarea name="message" id="" cols="10" rows="5"></textarea>
+      </div>
+      <br>
+      <div>
+        <label>Gender</label>
+        <select name="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="Age">Age</label>
+        <input type="number" name="Age" value="21">
+      </div>
+      <br>
+      <div>
+        <label for="Birthday">Birthday</label>
+        <input type="date" name="Birthday">
+      </div>
+      <br>
+      <input type="submit" name="submit" value="valio">
+
+    </form>
+    <!--Buttons-->
+    <br>
+    <button>Click Me</button>
+
+    <!--Images-->
+    <br>
+    <a href="">
+    <img src="" alt="mano kokosas">
+    </a>
+    <br>
+    <!--Qoutations-->
+    <blockquote cite="http://traversymedia.com">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, aspernatur natus. Dolorum excepturi, voluptas neque inventore maiores, sequi rem quibusdam nam molestiae quisquam necessitatibus nemo magni esse. Saepe, ab perspiciatis.
+    </blockquote>
+
+    <p>The <abbr title="World Wide Web">WWW</abbr> is awsome</p>
+    <a href="#table">nuoroda</a>
+    <div>
+      <a href="https://facebook.com" target="blank">
+        <img src="https://image.pngaaa.com/742/2501742-middle.png" alt="">
+      </a>
+    </div>
+    <article>
+      <h2>Nuotraukos</h2>
+      <p>
+        <img src="A:\mokslai\HTML and CSS\2 pamoka\titulinis.jpg" alt="aaa">
+      </p>
+    </article>
+
+    
+    <div style="margin-top: 500px;"></div>
+</body>
+</html>
